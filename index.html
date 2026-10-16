@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio of Md Azmol Fuad — AI, data, product, and business analysis." />
   <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <title>Md Azmol Fuad | AI, Data & Product</title>
   <style>
     :root {
@@ -52,7 +53,13 @@
       justify-content: space-between;
       gap: 18px;
     }
-    .brand { font-weight: 800; letter-spacing: -.02em; text-decoration: none; }
+    .brand { font-weight: 800; letter-spacing: -.02em; text-decoration: none; display:flex; align-items:center; gap:10px; }
+    .brand-mark {
+      width: 30px; height: 30px; border-radius: 9px; display:grid; place-items:center;
+      border:1px solid rgba(125,211,252,.35);
+      background: linear-gradient(145deg, rgba(125,211,252,.18), rgba(167,243,208,.08));
+      font-size:.76rem; letter-spacing:.02em;
+    }
     .nav-links { display: flex; flex-wrap: wrap; gap: 18px; }
     .nav-links a {
       text-decoration: none;
@@ -182,6 +189,15 @@
     }
     .experience-item:last-child { border-bottom: 1px solid var(--line); }
     .experience-item .meta { color: var(--muted); font-size: .94rem; }
+    .company-meta { display:flex; gap:12px; align-items:flex-start; }
+    .company-logo {
+      width:42px; height:42px; border-radius:11px; flex:0 0 42px;
+      background:#fff; border:1px solid var(--line); display:grid; place-items:center;
+      overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.18);
+    }
+    .company-logo img { width:28px; height:28px; object-fit:contain; }
+    .company-text strong { display:block; color:var(--text); font-size:.98rem; line-height:1.25; margin-bottom:3px; }
+    .company-text span { display:block; }
     .experience-item h3 { margin: 0 0 6px; font-size: 1.22rem; }
     .experience-item p { margin: 0; color: var(--muted); }
 
@@ -191,10 +207,31 @@
       gap: 18px;
     }
     .project {
-      padding: 26px;
+      padding: 0;
       display: flex;
       flex-direction: column;
-      min-height: 330px;
+      min-height: 390px;
+      overflow:hidden;
+    }
+    .project-body { padding:26px; display:flex; flex-direction:column; flex:1; }
+    .project-media {
+      aspect-ratio: 16/8.5;
+      background: linear-gradient(145deg, rgba(125,211,252,.12), rgba(167,243,208,.05));
+      border-bottom:1px solid var(--line);
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+    }
+    .project-media img { width:100%; height:100%; object-fit:cover; display:block; }
+    .project-media.contain img { object-fit:contain; padding:18px; background:#f7f9fc; }
+    .project-media.icon img { width:92px; height:92px; object-fit:contain; }
+    .project-placeholder {
+      width:100%; height:100%; display:grid; place-items:center;
+      font-weight:900; font-size:clamp(2rem,5vw,4rem); letter-spacing:-.06em;
+      color:rgba(238,243,255,.72);
+      background:
+        radial-gradient(circle at 25% 20%, rgba(125,211,252,.18), transparent 30%),
+        radial-gradient(circle at 75% 80%, rgba(167,243,208,.14), transparent 34%);
     }
     .project-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
     .project .num { color: var(--accent); font-weight: 800; font-size: .85rem; letter-spacing: .08em; }
@@ -278,7 +315,7 @@
 <body>
   <nav>
     <div class="wrap nav-inner">
-      <a class="brand" href="#top">Azmol Fuad</a>
+      <a class="brand" href="#top"><span class="brand-mark">AF</span><span>Azmol Fuad</span></a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -345,21 +382,30 @@
         </div>
         <div class="experience">
           <article class="experience-item">
-            <div class="meta">belairdirect / Intact<br />Oct 2025 – Present · 1 yr<br />St. John’s, NL</div>
+            <div class="meta company-meta">
+              <span class="company-logo"><img src="https://www.google.com/s2/favicons?domain=belairdirect.com&sz=128" alt="" /></span>
+              <span class="company-text"><strong>belairdirect / Intact</strong><span>Oct 2025 – Present · 1 yr+</span><span>St. John’s, NL</span></span>
+            </div>
             <div>
               <h3>Associate, Sales & Customer Service</h3>
               <p>Support customers with policy servicing, billing, payments, account updates, and coverage questions; explain insurance options clearly, identify relevant cross-selling opportunities, resolve concerns professionally, and maintain accurate documentation while handling confidential information.</p>
             </div>
           </article>
           <article class="experience-item">
-            <div class="meta">Anwar Technologies<br />Sep 2021 – Aug 2023 · 2 yrs<br />Bangladesh</div>
+            <div class="meta company-meta">
+              <span class="company-logo"><img src="https://www.google.com/s2/favicons?domain=anwargroup.com&sz=128" alt="" /></span>
+              <span class="company-text"><strong>Anwar Technologies</strong><span>Sep 2021 – Aug 2023 · 2 yrs</span><span>Dhaka, Bangladesh</span></span>
+            </div>
             <div>
               <h3>Business Analyst</h3>
               <p>Gathered stakeholder requirements, documented functional requirements for a Supply Chain ERP module, supported development-roadmap prioritization, analyzed operational workflows, and presented weekly findings and recommendations to senior leadership.</p>
             </div>
           </article>
           <article class="experience-item">
-            <div class="meta">Anwar Group of Industries<br />Sep 2020 – Aug 2021 · 1 yr<br />Bangladesh</div>
+            <div class="meta company-meta">
+              <span class="company-logo"><img src="https://www.google.com/s2/favicons?domain=anwargroup.com&sz=128" alt="" /></span>
+              <span class="company-text"><strong>Anwar Group of Industries</strong><span>Sep 2020 – Aug 2021 · 1 yr</span><span>Dhaka, Bangladesh</span></span>
+            </div>
             <div>
               <h3>Business Development Coordinator</h3>
               <p>Developed business proposals, researched software and technology trends, prepared leadership and MOU presentations, and supported early-stage growth and digital initiatives.</p>
@@ -377,21 +423,30 @@
         </div>
         <div class="experience">
           <article class="experience-item">
-            <div class="meta">Newfoundland Canvas<br />Oct 2023 – Jan 2024 · 4 mos<br />St. John’s, NL</div>
+            <div class="meta company-meta">
+              <span class="company-logo"><img src="https://www.google.com/s2/favicons?domain=newfoundlandcanvas.com&sz=128" alt="" /></span>
+              <span class="company-text"><strong>Newfoundland Canvas</strong><span>Oct 2023 – Jan 2024 · 4 mos</span><span>St. John’s, NL</span></span>
+            </div>
             <div>
               <h3>Express Print Sales Associate</h3>
               <p>Assisted customers with digital kiosk use, resolved in-store and online order questions, and provided timely, accurate service throughout the ordering process.</p>
             </div>
           </article>
           <article class="experience-item">
-            <div class="meta">Advantage Solutions<br />Jun 2024 – Present · 2 yrs 5 mos<br />St. John’s, NL</div>
+            <div class="meta company-meta">
+              <span class="company-logo"><img src="https://www.google.com/s2/favicons?domain=clubdemo.com&sz=128" alt="" /></span>
+              <span class="company-text"><strong>Advantage Solutions / CDS</strong><span>Jun 2024 – Present · 2 yrs+</span><span>St. John’s, NL</span></span>
+            </div>
             <div>
               <h3>CDS Sales Advisor</h3>
               <p>Demonstrate and explain products to customers, support sales through friendly engagement, follow food-safety and handling standards, and manage demonstration inventory.</p>
             </div>
           </article>
           <article class="experience-item">
-            <div class="meta">Dollarama<br />Aug 2025 – Oct 2025 · 3 mos<br />St. John’s, NL</div>
+            <div class="meta company-meta">
+              <span class="company-logo"><img src="https://www.google.com/s2/favicons?domain=dollarama.com&sz=128" alt="" /></span>
+              <span class="company-text"><strong>Dollarama</strong><span>Aug 2025 – Oct 2025 · 3 mos</span><span>St. John’s, NL</span></span>
+            </div>
             <div>
               <h3>Store Associate</h3>
               <p>Assisted customers, stocked and organized merchandise, maintained store presentation, supported checkout and day-to-day floor operations, and helped keep the store clean and well organized.</p>
@@ -409,103 +464,71 @@
         </div>
         <div class="projects">
           <article class="card project">
-            <div class="project-top"><span class="num">01</span><span class="tag">Accessibility</span></div>
-            <h3>Real-Time Visual-to-Audio Captioning</h3>
-            <p>
-              An assistive browser-extension workflow that generates image captions with a Transformer-based model
-              and converts them to speech through IBM Watson TTS. A FastAPI backend connects the model to browser interactions.
-            </p>
-            <div class="tags">
-              <span class="tag">TensorFlow</span><span class="tag">Transformer</span><span class="tag">EfficientNetB0</span>
-              <span class="tag">FastAPI</span><span class="tag">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/AzmolFK/AI-Accessibility-Extension-For-Visually-Impaired-Users" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <div class="project-media icon"><img src="https://raw.githubusercontent.com/AzmolFK/AI-Accessibility-Extension-For-Visually-Impaired-Users/main/ai-accessibility-extension/icons/icon.png" alt="Accessibility browser extension icon" /></div>
+            <div class="project-body">
+              <div class="project-top"><span class="num">01</span><span class="tag">Accessibility</span></div>
+              <h3>Real-Time Visual-to-Audio Captioning</h3>
+              <p>An assistive browser-extension workflow that generates image captions with a Transformer-based model and converts them to speech through IBM Watson TTS. A FastAPI backend connects the model to browser interactions.</p>
+              <div class="tags"><span class="tag">TensorFlow</span><span class="tag">Transformer</span><span class="tag">EfficientNetB0</span><span class="tag">FastAPI</span><span class="tag">JavaScript</span></div>
+              <div class="project-links"><a href="https://github.com/AzmolFK/AI-Accessibility-Extension-For-Visually-Impaired-Users" target="_blank" rel="noreferrer">View on GitHub →</a></div>
             </div>
           </article>
 
           <article class="card project">
-            <div class="project-top"><span class="num">02</span><span class="tag">Multimodal AI</span></div>
-            <h3>Multimodal Emotion Recognition</h3>
-            <p>
-              A real-time system that combines facial and vocal emotion signals using a Vision Transformer and BiLSTM.
-              Decision-level fusion combines predictions from webcam and microphone inputs.
-            </p>
-            <div class="tags">
-              <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">ViT</span>
-              <span class="tag">BiLSTM</span><span class="tag">OpenCV</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/AzmolFK/Multimodal-Emotion-Recognition-System" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <div class="project-media contain"><img src="https://raw.githubusercontent.com/AzmolFK/Multimodal-Emotion-Recognition-System/main/Training%20and%20Real-time%20Result/Multimodal%20Architechture.png" alt="Multimodal emotion recognition architecture" /></div>
+            <div class="project-body">
+              <div class="project-top"><span class="num">02</span><span class="tag">Multimodal AI</span></div>
+              <h3>Multimodal Emotion Recognition</h3>
+              <p>A real-time system that combines facial and vocal emotion signals using a Vision Transformer and BiLSTM. Decision-level fusion combines predictions from webcam and microphone inputs.</p>
+              <div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">ViT</span><span class="tag">BiLSTM</span><span class="tag">OpenCV</span></div>
+              <div class="project-links"><a href="https://github.com/AzmolFK/Multimodal-Emotion-Recognition-System" target="_blank" rel="noreferrer">View on GitHub →</a></div>
             </div>
           </article>
 
           <article class="card project">
-            <div class="project-top"><span class="num">03</span><span class="tag">Computer Vision</span></div>
-            <h3>Lane Rule Violation Detection</h3>
-            <p>
-              A traffic-management research project using real-time object detection, license-plate detection,
-              OCR, and edge/intermediary processing. A custom 1,450-image dataset supported the YOLO-based object detector,
-              with reported accuracy of 91%.
-            </p>
-            <div class="tags">
-              <span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">OCR</span>
-              <span class="tag">Python</span><span class="tag">Edge Computing</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/AzmolFK/YOLO-Bngla-License-Plate-Object-Detection" target="_blank" rel="noreferrer">Dataset & model repo →</a>
+            <div class="project-media"><img src="https://raw.githubusercontent.com/AzmolFK/YOLO-Bngla-License-Plate-Object-Detection/main/test/images/PXL_20201001_110609465_jpg.rf.7a24f2d99a4d5aeea18fca9755f4fcb1.jpg" alt="Bangladeshi vehicle image used in license plate detection project" /></div>
+            <div class="project-body">
+              <div class="project-top"><span class="num">03</span><span class="tag">Computer Vision</span></div>
+              <h3>Lane Rule Violation Detection</h3>
+              <p>A traffic-management research project using real-time object detection, license-plate detection, OCR, and edge/intermediary processing. A custom 1,450-image dataset supported the YOLO-based object detector, with reported accuracy of 91%.</p>
+              <div class="tags"><span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">OCR</span><span class="tag">Python</span><span class="tag">Edge Computing</span></div>
+              <div class="project-links"><a href="https://github.com/AzmolFK/YOLO-Bngla-License-Plate-Object-Detection" target="_blank" rel="noreferrer">Dataset & model repo →</a></div>
             </div>
           </article>
 
           <article class="card project">
-            <div class="project-top"><span class="num">04</span><span class="tag">Data Science</span></div>
-            <h3>Fungal Habitat Prediction</h3>
-            <p>
-              A machine-learning study predicting fungal habitat types from taxonomic and observation data.
-              The workflow included data cleaning, categorical encoding, Random Forest modeling, stratified cross-validation,
-              and precision/recall/F-score analysis.
-            </p>
-            <div class="tags">
-              <span class="tag">scikit-learn</span><span class="tag">Random Forest</span><span class="tag">Cross-validation</span>
-              <span class="tag">Data Preparation</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/AzmolFK/Predicting-Fungal-Habitat-Types-Using-Taxonomic-Classification-and-Observation-Data" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <div class="project-media contain"><img src="https://github.com/user-attachments/assets/fff98966-dc97-4e5c-b361-fc41f1376d30" alt="Fungal habitat prediction model performance chart" /></div>
+            <div class="project-body">
+              <div class="project-top"><span class="num">04</span><span class="tag">Data Science</span></div>
+              <h3>Fungal Habitat Prediction</h3>
+              <p>A machine-learning study predicting fungal habitat types from taxonomic and observation data. The workflow included data cleaning, categorical encoding, Random Forest modeling, stratified cross-validation, and precision/recall/F-score analysis.</p>
+              <div class="tags"><span class="tag">scikit-learn</span><span class="tag">Random Forest</span><span class="tag">Cross-validation</span><span class="tag">Data Preparation</span></div>
+              <div class="project-links"><a href="https://github.com/AzmolFK/Predicting-Fungal-Habitat-Types-Using-Taxonomic-Classification-and-Observation-Data" target="_blank" rel="noreferrer">View on GitHub →</a></div>
             </div>
           </article>
 
           <article class="card project">
-            <div class="project-top"><span class="num">05</span><span class="tag">Image Processing</span></div>
-            <h3>Vintage Photo Restoration</h3>
-            <p>
-              A restoration pipeline using classical image-processing techniques including denoising, sharpening,
-              histogram equalization, CLAHE, morphology, edge detection, artifact removal, and color restoration.
-            </p>
-            <div class="tags">
-              <span class="tag">Image Processing</span><span class="tag">CLAHE</span><span class="tag">Filtering</span>
-              <span class="tag">Computer Vision</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/AzmolFK/Vintage-Photo-Restoration-Using-Traditional-Image-Processing-Techniques" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <div class="project-media"><img src="https://raw.githubusercontent.com/AzmolFK/Vintage-Photo-Restoration-Using-Traditional-Image-Processing-Techniques/main/Result.png" alt="Vintage photo restoration result" /></div>
+            <div class="project-body">
+              <div class="project-top"><span class="num">05</span><span class="tag">Image Processing</span></div>
+              <h3>Vintage Photo Restoration</h3>
+              <p>A restoration pipeline using classical image-processing techniques including denoising, sharpening, histogram equalization, CLAHE, morphology, edge detection, artifact removal, and color restoration.</p>
+              <div class="tags"><span class="tag">Image Processing</span><span class="tag">CLAHE</span><span class="tag">Filtering</span><span class="tag">Computer Vision</span></div>
+              <div class="project-links"><a href="https://github.com/AzmolFK/Vintage-Photo-Restoration-Using-Traditional-Image-Processing-Techniques" target="_blank" rel="noreferrer">View on GitHub →</a></div>
             </div>
           </article>
 
           <article class="card project">
-            <div class="project-top"><span class="num">06</span><span class="tag">Reinforcement Learning</span></div>
-            <h3>Bandit Learning Experiments</h3>
-            <p>
-              Implemented and compared greedy, epsilon-greedy, optimistic-value, and gradient-bandit approaches,
-              including experiments under non-stationary reward dynamics and an online classification exercise.
-            </p>
-            <div class="tags">
-              <span class="tag">Reinforcement Learning</span><span class="tag">Bandits</span><span class="tag">Python</span>
-              <span class="tag">Experimentation</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/AzmolFK/Reinforcement-Learning-Experiment-With-Simple-Bandit-Learning-Algorithms" target="_blank" rel="noreferrer">View on GitHub →</a>
+            <div class="project-media"><div class="project-placeholder">RL</div></div>
+            <div class="project-body">
+              <div class="project-top"><span class="num">06</span><span class="tag">Reinforcement Learning</span></div>
+              <h3>Bandit Learning Experiments</h3>
+              <p>Implemented and compared greedy, epsilon-greedy, optimistic-value, and gradient-bandit approaches, including experiments under non-stationary reward dynamics and an online classification exercise.</p>
+              <div class="tags"><span class="tag">Reinforcement Learning</span><span class="tag">Bandits</span><span class="tag">Python</span><span class="tag">Experimentation</span></div>
+              <div class="project-links"><a href="https://github.com/AzmolFK/Reinforcement-Learning-Experiment-With-Simple-Bandit-Learning-Algorithms" target="_blank" rel="noreferrer">View on GitHub →</a></div>
             </div>
           </article>
-        </div>
+        </div>        </div>
       </div>
     </section>
 
