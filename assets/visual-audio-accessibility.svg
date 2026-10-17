@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 780" role="img" aria-labelledby="t d">
+<title id="t">AI-Powered Visual-to-Audio Accessibility System</title>
+<desc id="d">Image captioning training pipeline and real-time browser accessibility workflow.</desc>
+<defs>
+  <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#16365f"/></marker>
+  <style>
+    .h{font:700 34px Arial,sans-serif;fill:#0b1f3a}.t{font:600 22px Arial,sans-serif;fill:#0b1f3a}.s{font:18px Arial,sans-serif;fill:#18324f}
+    .line{stroke:#16365f;stroke-width:4;fill:none;marker-end:url(#a)}.dash{stroke:#9eb6ce;stroke-width:3;stroke-dasharray:10 10}
+    .box{rx:18;ry:18;stroke:#c7d9e8;stroke-width:2}.teal{fill:#1eb4a7}.blue{fill:#d8f1fb}.navy{fill:#173f6d}.mint{fill:#c9f2df}.orange{fill:#ffa16d}.lav{fill:#d8cdf7}
+  </style>
+</defs>
+<rect width="1600" height="780" fill="#fff"/>
+<text x="40" y="60" class="h">Image Captioning Pipeline</text>
+<rect x="70" y="170" width="110" height="90" rx="14" fill="#eaf3fb" stroke="#16365f" stroke-width="3"/><ellipse cx="125" cy="170" rx="55" ry="18" fill="#eaf3fb" stroke="#16365f" stroke-width="3"/><path d="M70 200h110M70 230h110" stroke="#16365f" stroke-width="3"/><text x="125" y="295" text-anchor="middle" class="t">Image Dataset</text>
+<rect x="245" y="125" width="235" height="75" class="box teal"/><text x="362" y="170" text-anchor="middle" class="t" fill="#fff">Image Resize</text>
+<rect x="245" y="235" width="235" height="75" class="box teal"/><text x="362" y="272" text-anchor="middle" class="t" fill="#fff">Text</text><text x="362" y="298" text-anchor="middle" class="t" fill="#fff">Tokenization</text>
+<path d="M180 215H220V162H245M220 215v58h25" class="line"/>
+<g transform="translate(565 155)"><ellipse cx="55" cy="18" rx="48" ry="18" fill="#173f6d"/><rect x="7" y="18" width="96" height="75" fill="#173f6d"/><ellipse cx="55" cy="93" rx="48" ry="18" fill="#173f6d"/><path d="M7 42c28 16 68 16 96 0M7 67c28 16 68 16 96 0" stroke="#fff" stroke-width="3" fill="none"/></g>
+<text x="620" y="295" text-anchor="middle" class="t">Processed Data</text>
+<path d="M480 217H565" class="line"/>
+<rect x="780" y="90" width="205" height="62" class="box blue"/><text x="882" y="130" text-anchor="middle" class="t">EfficientNetB0</text>
+<rect x="1020" y="90" width="220" height="62" class="box blue"/><text x="1130" y="118" text-anchor="middle" class="t">Transformer</text><text x="1130" y="142" text-anchor="middle" class="t">Decoder</text>
+<rect x="820" y="285" width="170" height="62" class="box blue"/><text x="905" y="325" text-anchor="middle" class="t">Adam</text>
+<rect x="1035" y="285" width="180" height="62" class="box blue"/><text x="1125" y="314" text-anchor="middle" class="t">Cross</text><text x="1125" y="338" text-anchor="middle" class="t">Entropy</text>
+<rect x="900" y="175" width="205" height="95" rx="22" fill="#ecf9fd" stroke="#b8dceb" stroke-width="3"/>
+<circle cx="1002" cy="222" r="20" fill="#7dd3fc" stroke="#16365f" stroke-width="4"/><circle cx="952" cy="205" r="13" fill="#7dd3fc" stroke="#16365f" stroke-width="4"/><circle cx="1052" cy="205" r="13" fill="#7dd3fc" stroke="#16365f" stroke-width="4"/><circle cx="957" cy="247" r="13" fill="#7dd3fc" stroke="#16365f" stroke-width="4"/><circle cx="1047" cy="247" r="13" fill="#7dd3fc" stroke="#16365f" stroke-width="4"/><path d="M965 210l25 8m49-8l-25 8m-45 23l24-12m46 12l-24-12" stroke="#16365f" stroke-width="4"/>
+<path d="M660 217H900M882 152l70 35M1130 152l-70 35M905 285l50-34M1125 285l-58-34" class="line"/>
+<g transform="translate(1280 155)"><path d="M55 0l60 32v72l-60 34L0 105V33z" fill="#55cbe4" stroke="#16365f" stroke-width="4"/><path d="M0 33l55 32 60-33M55 65v73" stroke="#16365f" stroke-width="4" fill="none"/></g>
+<text x="1335" y="325" text-anchor="middle" class="t">Trained Captioning</text><text x="1335" y="352" text-anchor="middle" class="t">Model</text>
+<path d="M1105 220h175" class="line"/>
+<line x1="30" y1="395" x2="1570" y2="395" class="dash"/>
+<text x="40" y="450" class="h">Real-Time Accessibility Workflow</text>
+<g transform="translate(1420 505)"><rect x="0" y="0" width="135" height="105" rx="12" fill="#eaf3fb" stroke="#16365f" stroke-width="4"/><rect x="0" y="0" width="135" height="22" rx="12" fill="#cfe3f5"/><circle cx="13" cy="11" r="4" fill="#16365f"/><circle cx="28" cy="11" r="4" fill="#16365f"/><rect x="18" y="40" width="45" height="38" fill="#fff" stroke="#16365f" stroke-width="3"/><path d="M22 72l12-12 9 8 10-14 7 18" stroke="#16365f" stroke-width="3" fill="none"/></g>
+<text x="1487" y="645" text-anchor="middle" class="t">User Viewing</text><text x="1487" y="671" text-anchor="middle" class="t">Webpage</text>
+<rect x="1190" y="510" width="180" height="105" class="box mint"/><text x="1280" y="558" text-anchor="middle" class="t">Browser</text><text x="1280" y="586" text-anchor="middle" class="t">Extension</text>
+<g transform="translate(1020 515)"><rect x="0" y="0" width="125" height="30" rx="8" fill="#d9edf8" stroke="#16365f" stroke-width="3"/><rect x="0" y="38" width="125" height="30" rx="8" fill="#d9edf8" stroke="#16365f" stroke-width="3"/><rect x="0" y="76" width="125" height="30" rx="8" fill="#d9edf8" stroke="#16365f" stroke-width="3"/></g>
+<text x="1082" y="650" text-anchor="middle" class="t">FastAPI Backend</text>
+<rect x="760" y="520" width="210" height="95" class="box navy"/><text x="865" y="560" text-anchor="middle" class="t" fill="#fff">Generated</text><text x="865" y="589" text-anchor="middle" class="t" fill="#fff">Caption</text>
+<rect x="520" y="520" width="185" height="95" class="box lav"/><text x="612" y="560" text-anchor="middle" class="t">IBM Watson</text><text x="612" y="589" text-anchor="middle" class="t">TTS</text>
+<rect x="280" y="520" width="185" height="95" class="box orange"/><text x="372" y="577" text-anchor="middle" class="t">Audio Output</text>
+<g transform="translate(75 515)"><circle cx="65" cy="45" r="30" fill="#173f6d"/><path d="M20 45a45 45 0 0 1 90 0" stroke="#16365f" stroke-width="8" fill="none"/><rect x="8" y="42" width="18" height="40" rx="8" fill="#55cbe4" stroke="#16365f" stroke-width="3"/><rect x="104" y="42" width="18" height="40" rx="8" fill="#55cbe4" stroke="#16365f" stroke-width="3"/><path d="M20 125c10-38 80-38 90 0" fill="#173f6d"/></g>
+<text x="140" y="675" text-anchor="middle" class="t">User</text><text x="140" y="700" text-anchor="middle" class="s">(Listens to Audio)</text>
+<path d="M1420 562h-50M1190 562h-45M1020 562h-50M760 562h-55M520 562h-55M280 562H200" class="line"/>
+<path d="M1335 352v130h-252v33" fill="none" stroke="#16365f" stroke-width="4" stroke-dasharray="9 8" marker-end="url(#a)"/>
+</svg>
