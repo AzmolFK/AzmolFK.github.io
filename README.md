@@ -19,4 +19,3 @@ https://azmolfk.github.io/
 - Vintage Photo Restoration
 - Reinforcement Learning / Bandit Experiments
 
-> EmberWatch is intentionally excluded while it is still in development.
