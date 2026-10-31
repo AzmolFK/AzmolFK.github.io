@@ -62,6 +62,15 @@
       return;
     }
 
+    if (/linkedin\.com\/learning\/certificates\//i.test(href)) {
+      send('certification_click', {
+        link_url: href,
+        link_text: linkText,
+        certification_name: el.dataset.certification || linkText
+      });
+      return;
+    }
+
     if (/linkedin\.com/i.test(href)) {
       send('linkedin_click', { link_url: href, link_text: linkText });
       return;
