@@ -39,7 +39,9 @@
     if (!el) return;
 
     if (el.tagName === 'BUTTON') {
-      if (/print|save pdf/i.test(cleanText(el))) {
+      if (el.id === 'download-resume' || /download pdf/i.test(cleanText(el))) {
+        send('resume_download', { link_text: cleanText(el) });
+      } else if (/print|save pdf/i.test(cleanText(el))) {
         send('resume_print_click', { link_text: cleanText(el) });
       }
       return;
